@@ -1,0 +1,688 @@
+/******************************************************************************
+* Less for Simplicitate
+******************************************************************************/
+@font-face {
+    font-family: 'socialicoregular';
+    src: url('@{plChildRoot}/fonts/socialico-webfont.eot');
+    src: url('@{plChildRoot}/fonts/socialico-webfont.eot?#iefix') format('embedded-opentype'),
+         url('@{plChildRoot}/fonts/socialico-webfont.woff') format('woff'),
+         url('@{plChildRoot}/fonts/socialico-webfont.ttf') format('truetype'),
+         url('@{plChildRoot}/fonts/socialico-webfont.svg#socialicoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@spFontSize: 12px;
+@spH1Size: 	14px;
+@spH2Size: 	13px;
+@spH3Size: 	12px;
+@spH4Size: 	@spFontSize;
+@spH5Size: 	@spFontSize;
+@spH6Size: 	@spFontSize;
+
+body{
+	background: url( "@{plChildRoot}@{spBackPattern}" );
+	font-size:@spFontSize;
+}
+
+.page-canvas{
+	background:@pl-base;
+}
+
+h1  { font-size:@spH1Size; text-transform:uppercase; font-weight:normal;}
+h2  { font-size:@spH3Size; text-transform:uppercase; font-weight:normal;}
+h3  { font-size:@spH4Size; text-transform:uppercase; font-weight:normal;}
+h4  { font-size:@spH5Size; text-transform:uppercase; font-weight:normal;}
+h5  { font-size:@spH6Size; text-transform:uppercase; font-weight:normal;}
+h6  { font-size:@spFontSize; text-transform:uppercase; font-weight:normal;}
+
+
+blockquote p{
+	font-size:@spFontSize;	
+}
+
+
+
+.mastmeta, .cnt-comments a, .cnt-comments a:hover, .tcolor2, .lcolor2 a, .subhead, .widget-title, #branding .site-description, #callout, #commentform .required, #postauthor .subtext, .commentlist .comment-meta a, .content-pagination span, .content-pagination a .cp-num, .comment.alt .comment-author, .tcolor3, .lcolor3 a, .main_nav a, .widget-title a, h3.widget-title a, #subnav_row li a, .metabar em, .metabar a, .tags, #commentform label, .form-allowed-tags code, .rss-date, .comment.alt, .reply a, .auxilary a, .cform .emailreqtxt, .cform .reqtxt, code, pre {
+	color:@pl-text;
+}
+.metabar em{
+	font-style: italic;
+}
+
+
+.fixed_width #page{
+	padding-top: 50px;
+}
+
+.header-line{
+	background: black;
+	height:10px;
+}
+
+
+.fixed_width #page, 
+.fixed_width #footer, 
+.canvas .page-canvas {
+    width: 90% !important;
+}
+.socialicoregular{
+	font-family: socialicoregular;
+}
+
+.icons{
+	bottom: 40%;
+	&.simplicitate{
+		margin-right: 30px;
+	}
+}
+.iconfont{
+	float: left!important;
+	a{
+		.socialicoregular;
+		font-size: 40px;
+		width: auto;
+		height: auto;
+		margin-left: 0px;
+		color: darken( @pl-text, 10% );
+		.transition(color .2s linear);
+		&:hover{
+			color:  @pl-link;
+			.transition(color .2s linear);
+		}
+	}
+
+
+}
+
+
+/******************************************************************************
+* Kenburner Slider for Simplicitate
+******************************************************************************/
+	.burner-holder{
+		max-width: 100% !important;
+		overflow: hidden;
+		height: auto;
+	}
+
+	.section-kenburner-slider .content-pad{
+		padding:0px;
+	}
+
+	.kslider-bg{
+		display: none;
+		visibility: hidden;
+	}
+	.thumbnav .thumbs{
+		display: none;
+	}
+	.simple .thumbnav {
+		top:43%;
+	}
+	.simple .thumbnav .leftarrow{
+		left:0px;
+	}
+	.simple .thumbnav .leftarrow, .simple .thumbnav .rightarrow {
+		background: none;
+		width: 42px;
+		height: 42px;
+		.transition(opacity .2s linear);
+		opacity: .5;
+	}
+
+	.simple .thumbnav .leftarrow:hover, 
+	.simple .thumbnav .rightarrow:hover{
+		.transition(opacity .2s linear);
+		opacity: 1;
+	}
+
+	.simple .thumbnav .leftarrow{
+		background-position: 0 0;
+		background: url( @{plChildRoot}/images/nav/left-arrow.png ) no-repeat;
+	}
+
+	.simple .thumbnav .rightarrow{
+		background-position: 0 0;
+		background: url( @{plChildRoot}/images/nav/right-arrow.png ) no-repeat;
+	}
+
+	.simple .slide_mainmask {
+	    border-bottom: none;
+	    padding-top: 0px;
+	    .box-shadow(  0 1px 5px rgba(0, 0, 0, .4) ); 
+	}
+
+/******************************************************************************
+* Highlight Section
+******************************************************************************/
+	#highlight{
+
+		.highlight-head {
+		    font-size: 22px !important;
+		    text-transform: none;
+		    font-style: italic;
+		    color:@pl-link;
+		}
+
+		.content .highlight-subhead, 
+	    .copy-pad .highlight-subhead{
+			font-size: 15px !important;
+			text-transform: none;
+		}
+	}
+
+	
+	.highlight-area{
+		background: url( @{plChildRoot}/images/top-bg.png ) no-repeat 50% 0;
+	}
+
+	.section-highlight .content-pad{
+		background: url( @{plChildRoot}/images/bottom-bg.png ) no-repeat 50% 90%;	
+	}
+
+/******************************************************************************
+* CallOut Section
+******************************************************************************/
+
+	#callout {
+		.callout-area{
+			padding: 25px 20px !important;
+			background: darken( @pl-base, 2.5% );
+			border: 1px solid darken( @pl-base, 5% );	
+		}
+		h2{
+			font-size: 22px !important;
+		    text-transform: none;
+		    font-style: italic;
+		}
+		
+	}
+
+/******************************************************************************
+* Twitter Section
+******************************************************************************/
+
+	.tbubble-pad {
+		background: url(@{plChildRoot}/images/tweet-icon.png) no-repeat 0px 0px !important;
+		padding: 0 0 0 50px !important;
+		font-size: 18px !important;
+	    text-transform: none;
+	    text-align: center !important;
+	    color:@pl-link;
+	}
+	.section-twitterbar{
+		border-top: 1px solid darken( @pl-base, 5% );
+		border-bottom: 1px solid darken( @pl-base, 5% );	
+	}
+	
+
+/******************************************************************************
+* Carousel Section
+******************************************************************************/
+	
+	.thecarousel{
+		background: @pl-base !important;
+	}
+
+	#carousel .jcarousel-next, #carousel .jcarousel-prev{
+		width: 45px !important;
+		height: 45px !important;
+	}
+
+	#carousel{
+
+		.jcarousel-prev		{
+			background: url( @{plChildRoot}/images/nav/left-arrow.png ) no-repeat !important;
+		}
+		.jcarousel-next{
+			background: url( @{plChildRoot}/images/nav/right-arrow.png ) no-repeat !important;	
+		}
+	}
+
+	.carousel_image_link img{
+		.transition(all .1s linear);
+		&:hover{
+			.scale(1.1);
+			.transition(all .1s linear);
+		}
+		
+
+	}
+
+/******************************************************************************
+* Boxes Section
+******************************************************************************/
+	.section-boxes .pl-imageframe img, 
+	.section-boxes img.pl-imageframe, 
+	.section-boxes .fboxgraphic img {
+	    .border-radius( 200px );
+	    .box-shadow(0 0 0 3px lighten( @pl-link, 25% ));
+	    .transition( background .2s linear );
+	    background: lighten( @pl-link, 15% );
+	    border: 2px solid #ffffff;
+	    padding: 25px;
+
+	    &:hover{
+	    	.transition( background .2s linear );
+			background: lighten( @pl-link, 5% );
+	    }
+	}
+
+	.section-boxes .fboxgraphic.img img{
+		padding: 3px;	
+	}
+
+
+	.fboxtitle {
+		
+		background: url( @{plChildRoot}/images/title-bg.png ) repeat-x 0 55%;
+		text-align: center;
+
+		h3{
+			background-color: @pl-base;
+			display: inline;
+			text-transform: uppercase;
+			padding:0px 10px !important;
+		}
+	}
+
+	.fboxtext{
+		text-align:center;
+		padding-top: 5px;
+		font-size: .95em;
+		
+	}
+
+	#boxes .content-pad {
+	    padding-top: 20px;
+	}
+
+/******************************************************************************
+* Latest Blog Post Section
+******************************************************************************/
+	.block-title {
+	    color: @pl-text;
+	    padding: 10px 0;
+	    text-align: left;
+	    letter-spacing: 2px;
+	}
+	.block-title span{
+		padding: 0 20px 0 0px;
+	}
+	.intro-latest{
+		font-size: .95em;
+		
+	}
+	.latest-slider {
+
+		h3{
+			a{
+				font-size: 13px;
+				font-weight: normal;
+
+			}
+		}
+
+		.span9{
+			margin-bottom: 0px;
+		}
+
+		.latest_pagination {
+		    padding-top: 0px;
+		}
+		.nav {
+			.border-radius(25px);
+			margin: 0 2px 0 0;
+			height: 26px;
+			width: 26px;
+
+
+			&:hover{
+				background-position: 0 0;
+
+			}
+		}
+
+		#next_pag{
+			background: url(@{plChildRoot}/images/nav/latest-next.png) no-repeat 11px 7px lighten( @pl-link, 10% );
+			&:hover{
+				background-position: 11px 7px;
+				background-color:@pl-link;
+			}
+		}
+		
+		#prev_pag{
+			background: url(@{plChildRoot}/images/nav/latest-prev.png) no-repeat 9px 7px lighten( @pl-link, 10% );
+			&:hover{
+				background-position: 9px 7px;
+				background-color:@pl-link;
+
+			}
+		}
+		.latest_pagination{
+			width: 60px;
+		}
+
+	}
+	
+
+/******************************************************************************
+* Footer
+******************************************************************************/
+	#footer{
+		font-size: .90em;
+		.outline{
+			background: @spFooterBack;
+			margin: 0 0 50px 0;
+			.box-shadow(  0 1px 5px rgba(0, 0, 0, .8) ); 
+			padding-top: 10px;
+		}
+		.content-pad{
+			padding:0 15px;
+		}
+		.widget-title{
+			border:0 none transparent !important;
+			color: @pl-link !important;
+		}
+	}
+	.full_width #footer .outline{
+		margin: 0 !important;
+	}
+
+	.rsswidget {
+		img{
+			display: none;
+		}
+	}
+
+	.section-sb_footcols{
+		.ppfull .pp5{
+			width: 18%;
+		}
+	}
+
+/******************************************************************************
+* MoreFooter
+******************************************************************************/
+	#morefoot_area{
+		.section-sb_footcols{
+			background: @spMoreBack !important;
+			color: darken( @spMoreText, 20%);	
+			font-size: .90em;
+			.widget-title{
+				color: @pl-link !important;
+				font-size: 1em;
+				border:0 none transparent !important;
+			}
+		}
+	}
+	.section-morefoot{
+		background: @spMoreBack;
+		color: darken( @spMoreText, 20%);	
+		font-size: .80em;
+		.widget-title{
+			border:0 none transparent !important;
+			color: @pl-link;
+			font-size: 1em;
+		}
+	}
+
+
+	.section-features{
+		.content-pad {
+		    padding: 0 0 15px;
+		}
+		#featurenav{ 
+			a{
+				background: lighten(@pl-link, 25%);
+				padding: 0 10px;
+				color:lighten(@pl-link, 100%); 
+				.transition( background .2s linear );
+				&.activeSlide, &:hover{
+					color:lighten(@pl-link, 100%);  
+					background: @pl-link;
+					.transition( background .2s linear );
+				}
+			}
+		}
+	}
+
+	.post-meta .c_img{
+		background: none;
+		border: 0 none transparent;
+		box-shadow: none;
+		text-align: center;
+	}
+
+	.post-meta .c_img, .hentry .c_img{
+		padding: 0px;
+	}
+
+	.entry-title{
+		font-weight: normal;
+		padding: 10px 0;
+		border-bottom: 1px solid lighten(@pl-text, 35% );
+	}
+
+
+	.hentry, .fpost .post-excerpt {
+	    font-size: 1em;
+	}
+	.fpost .post-excerpt{
+		margin-bottom: 20px;
+	}
+	.continue_reading_link,
+	.comment-reply-link{
+		background: lighten( @pl-link, 5% );
+		float: right;
+		color: @white !important;
+		margin-top: 10px;
+		padding: 10px 20px;
+		text-align: center;
+		.border-radius( 5px );
+		&:hover{
+			.transition( background .2s linear );
+			background: @pl-link;
+			color: @white;
+			text-decoration: none !important;
+		}
+	}
+	.comment-reply-link{
+		font-size: 1em;
+		padding: 5px 10px;
+		float: none;
+		margin-top: 5px;
+	}
+
+	.post-header{
+		.the-date{
+			.border-radius(10px);
+			background: lighten( @pl-text, 30% );
+			width: 60px;
+			height: 50px;
+			margin-top: 10px;
+			padding-top:12px; 
+			.the-day, .the-month{
+				font-size: @spH1Size + 2; 
+				font-weight: bold;
+				text-align: center;
+				display: block;
+				color:@white;
+			}
+		}
+	}
+	.post-meta .c_img, .hentry .c_img{
+		max-width: 100% !important;
+	}
+
+	.post-nav,
+	.current_posts_info{
+		.border-radius(5px);
+		background: lighten( @pl-link, 15% );
+		color: lighten( @pl-link, 100% );
+	}
+
+	.widget-title{
+		font-size: 1em;
+		font-weight: normal;
+	}
+
+	.widget ul li{
+		background: url( @{plChildRoot}/images/arrow.png ) no-repeat 0 7px;
+		padding-left: 10px;
+		a{
+			color:@pl-text;
+			.transition(color .2s linear);
+			&:hover{
+				color:@pl-link !important;
+				text-decoration: none;
+				.transition(color .2s linear);
+			}
+		}
+	}
+
+
+	.fpost .entry-title{
+		font-size:@spH1Size + 4;
+		a{
+			.transition(color .2s linear);
+			&:hover{
+				.transition(color .2s linear);
+				text-decoration:none !important;
+				color:@pl-link;
+			}
+			
+		}
+	}
+
+	h3#comments-title{
+		background: none;
+	}
+
+	.widget_recent_comments.widget li{
+		padding: 0 0 0 10px;
+	}
+
+	.menu-mobile{
+		display: none;
+	}
+
+	.commentlist .alt,
+	.commentlist ul.children .even{
+		background: none transparent !important;
+	}
+
+
+	.full_img{
+		position: relative !important;
+		overflow: hidden;
+		.link {
+			overflow:hidden;
+			position: absolute;
+			top:-200px;
+			left:0px;
+			display: block;
+			width:100%;
+			height:100%;
+			background:url(@{plChildRoot}/images/link.png) no-repeat center center;
+			opacity: 1;
+		}
+	} 
+
+
+/******************************************************************************
+* MEDIA QUERIES
+******************************************************************************/
+
+/* Smartphones (portrait and landscape) ----------- */
+@media screen and (min-width : 320px) and (max-width : 480px) {
+	.branding_wrap{
+		.mainlogo-link{
+			text-align: center;
+			display: block;
+		}
+		.icons{
+			position: relative;
+			&.simplicitate{
+				float:none;
+				display: block;
+				margin-top: 15px;
+				margin-left:50px !important;
+			}
+		}
+	}
+	.iconfont a{
+	  font-size:34px;
+	}
+	.main-nav{
+		display: none;
+	}
+	.menu-mobile{
+		display: block;
+		margin: 15px auto;
+		width: 80%;
+		background: transparent;
+		padding: 5px;
+		font-size: 16px;
+		border: 1px solid #e1e1e1;
+		height: 34px;
+		color:@pl-text;
+	}
+	.section-kenburner-slider{
+		display: none;
+	}
+	.block-title{
+		padding: 10px;
+	}
+	.intro-latest{
+		padding: 10px;
+	}
+	.post-header{
+		.the-date{
+			width: 100%;
+		}
+	}
+}
+
+/* Smartphones (landscape) ----------- */
+@media screen and (min-width : 321px) {
+	/*Your Styles*/
+}
+
+/* Smartphones (portrait) ----------- */
+@media screen and (max-width : 320px) {
+	/*Your Styles*/
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media screen and (min-width : 768px) and (max-width : 1024px) {
+
+}
+
+/* iPads (landscape) ----------- */
+@media screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {
+	/*Your Styles*/
+}
+
+/* iPads (portrait) ----------- */
+@media screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+	/*Your Styles*/
+}
+
+/* Desktops and laptops ----------- */
+@media screen and (min-width : 1224px) {
+	/*Your Styles*/
+}
+
+/* Large screens ----------- */
+@media screen and (min-width : 1824px) {
+	/*Your Styles*/
+}
+
+/* iPhone 4 and high pixel ratio devices ----------- */
+@media
+screen and (-webkit-min-pixel-ratio : 1.5),
+screen and (min-pixel-ratio : 1.5) {
+	/*Your Styles*/
+}

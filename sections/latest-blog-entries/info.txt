@@ -1,0 +1,53 @@
+== Description ==
+
+Latest Blogs Entries is a very powerful section for Pagelines which displays your recent posts with thumbnail, excerpt, title, date and read more link . 
+
+It’s the perfect solution to show specific entries on the home page or in any other page.
+
+More than 15 options in general.
+
+Some of the great options are:
+
+* Responsive
+* 5 transition effects
+* 6 color options
+* Cloneable
+* IE7+, FireFox, Chrome, Safari Support
+* Choose if you want to show the latest blog posts or just a certain category.
+* Excerpt length (independent to the global excerpt function)
+* And many more...
+
+[Follow me at Twitter](http://twitter.com/tmeister "Tmeister")  for news of next versions and new releases.
+
+Also you can see my other sections
+
+* [Kerburner Slider](http://www.pagelines.com/store/sections/kenburner-slider/ "Kerburner Slider")
+* [Parallax Slider](http://www.pagelines.com/store/sections/parallax-slider/ "Parallax Slider")
+* [Social Surf Menu](http://www.pagelines.com/store/sections/social-surf-menu/ "Social Surf Menu")
+* [Infinite Carousel](http://www.pagelines.com/store/sections/infinite-carousel/ "Infinite Carousel")
+* [Always on Top Menu](http://www.pagelines.com/store/sections/always-on-top-menu/ "Always on Top Menu")
+
+== Features ==
+
+* Responsive
+* 5 transition effects
+* 6 color options
+* Cloneable
+* IE7+, FireFox, Chrome, Safari Support
+* Choose if you want to show the latest blog posts or just a certain category.
+
+
+== Changelog ==
+= 1.0.3 = ( MAY 08, 2012 )
+* Fix excerpt issue, now strip the html tags and show only the text.
+* Added a option to choose the source from the excerpt, the WP excerpt or the post content.
+
+= 1.0.2 = ( APR 28, 2012 )
+* Fix PHP short tag issue
+* Added a option to choose how many words to show in the excerpt. independent to the global excerpt function.
+
+= 1.0.1 = ( APR 16, 2012 )
+* Added option to change the "Read More" text.
+
+= 1.0.0 = ( APR 15, 2012 )
+* Public Release

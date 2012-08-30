@@ -1,0 +1,8 @@
+== Description ==
+
+Simplicitate is a clean and minimalist theme for PageLines adds more than 10 color and background options and it comes with 4 more sections, besides the PageLines. Simplicitate is a multiporpose theme it can be used for any site.
+
+== Changelog ==
+
+= 1.0 =
+* Initial Release

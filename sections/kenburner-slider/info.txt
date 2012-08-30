@@ -1,0 +1,64 @@
+== Description ==
+
+The Kenburner Slider gives you the chance to display rich content in a simple, elegant and colorful way, thanks to Kenburn effect and text animations. The slider also supports YouTube and Vimeo video embedding. 
+
+With Kenburner Slider you can forget the usual slider and replace it with a powerful presentation tool
+
+More than 25 options in general.
+
+Some of the great options are:
+
+* Fully Resizable
+* Video Support ( Youtube and Vimeo )
+* Background Color
+* Animated and Unlimited captions
+* iPhone/iPad & Android Swipe Touch
+* IE7+, FireFox, Chrome, Safari Support
+* Font Type & Font Size Options
+* 9 built caption animations 
+* 8 built styles for caption with HTML support
+* And many more...
+
+[Follow me at Twitter](http://twitter.com/tmeister "Tmeister")  for news of next versions and new releases.
+
+Also you can see my other sections
+
+* [Parallax Slider](http://www.pagelines.com/store/sections/parallax-slider/ "Parallax Slider")
+* [Social Surf Menu](http://www.pagelines.com/store/sections/social-surf-menu/ "Social Surf Menu")
+* [Infinite Carousel](http://www.pagelines.com/store/sections/infinite-carousel/ "Infinite Carousel")
+* [Always on Top Menu](http://www.pagelines.com/store/sections/always-on-top-menu/ "Always on Top Menu")
+
+== Features ==
+
+* Fully Resizable
+* Video Support ( Youtube and Vimeo )
+* Background Color
+* Animated and Unlimited captions
+* iPhone/iPad & Android Swipe Touch
+* IE7+, FireFox, Chrome, Safari Support
+* Font Type & Font Size Options
+* 9 built caption animations 
+* 8 built styles for caption with HTML support
+
+
+
+
+== Changelog ==
+
+= 1.2.3 = ( JUN 13, 2012 )
+* PageLines 2.2 compatibility
+
+= 1.2.2 = ( MAY 08, 2012 )
+* Fixed cut typography issue when wipe effect is used ( Chrome ).
+
+= 1.2.1 = ( APRIL 19, 2012 )
+* Fixed cut typography issue when wipe effect is used.
+
+= 1.2 = ( MARCH 16, 2012 )
+* Fixed upload image issue, $meta['sizes']
+
+= 1.1 = ( FEB 19, 2012 )
+* Fixed issue with javascript minify file.
+
+= 1.0 = ( FEB 6, 2012 )
+* Public Release

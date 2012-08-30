@@ -1,0 +1,101 @@
+.block-title {
+    background: url("images/title-bg.png") repeat-x scroll 0 17px transparent;
+    font-size: 14px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #AAA;
+}
+
+.block-title span {
+    background: #FFFFFF;
+    padding: 0 15px;
+}
+
+.latest-slider ul.slides li {
+    border: 1px solid #EEEEEE;
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 25px;
+    padding: 15px;
+    position: relative;
+    width: 183px;
+    display: block;
+}
+
+.latest-slider ul.slides li:hover {
+    border-bottom: 1px solid #d0d0d0;
+    border-right: 1px solid #d0d0d0;
+
+    -webkit-box-shadow: 3px 3px 0 #e4e4e4;
+    -moz-box-shadow: 3px 3px 0 #e4e4e4;
+    box-shadow: 3px 3px 0 #e4e4e4;
+}
+
+.latest-slider .blog-title {
+    text-align: center;
+}
+
+.latest-slider h3 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 5px;
+}
+
+.latest-slider .post-meta {
+    color: #aaa;
+    font-size: 10px;
+    line-height: 16px;
+    margin: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.latest-slider .excerpt {
+    border-top: 1px solid #E4E4E4;
+    text-align: center;
+}
+
+.latest-slider .read-more {
+    border-top: 1px solid #EEEEEE;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    padding-top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 183px;
+}
+
+.latest-slider .latest_pagination {
+    width: 40px;
+    margin: 0 auto;
+}
+
+.latest-slider .nav {
+    background: url(images/nav_arrows.png) no-repeat 0 0;
+    display: inline-block;
+    float: left;
+    cursor: pointer;
+    height: 18px;
+    margin: 0 5px 0 0;
+    width: 11px;
+}
+
+.latest-slider #next_pag {
+    background-position: -15px 0;
+}
+
+.latest-slider #next_pag:hover {
+    background-position: -15px -23px;
+}
+
+.latest-slider #prev_pag:hover {
+    background-position: 0 -23px;
+}
+
+.latest-slider .blog-thumb img{
+    min-height:100px;
+}
