@@ -4,6 +4,7 @@
 	Author: Enrique Chavez
 	Author URI: http://tmeister.net
 	Description: Shows the main site logo or the site title and description adapted by Simplicitate Theme.
+	Version: 1.0
 	Class Name: TmSimplicitateBranding
 	Workswith: header 
 */

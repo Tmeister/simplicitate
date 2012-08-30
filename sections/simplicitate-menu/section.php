@@ -4,7 +4,7 @@ Section: Simplicitate Menu
 Author: Enrique Chavez
 Author URI: http://tmeister.net
 Version: 1.0
-Description: Simplicitate Menu
+Description: Simplicitate Menu a 3 level menu with 6 color options created for Simplicitate Theme
 Class Name: SimplicitateMenu
 Cloning: false
 Workswith: header
