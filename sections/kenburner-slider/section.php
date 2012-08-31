@@ -230,7 +230,7 @@ class TmKenBurnSlider extends PageLinesSection {
 
 
 					?>
-						<li data-transition="<?php echo $transition; ?>" data-startfrom="<?php echo $startfrom; ?>" data-endto="<?php echo $endto ?>" data-zoom="<?php echo $zoom ?>" data-zoomfact="<?php echo $zoomfact ?>" data-panduration="<?php echo $panduration ?>" data-colortransition="<?php echo $colortransition ?>" rel="Probando ando..">
+						<li data-transition="<?php echo $transition; ?>" data-startfrom="<?php echo $startfrom; ?>" data-endto="<?php echo $endto ?>" data-zoom="<?php echo $zoom ?>" data-zoomfact="<?php echo $zoomfact ?>" data-panduration="<?php echo $panduration ?>" data-colortransition="<?php echo $colortransition ?>">
 								<img alt="" src="<?php echo $image ?>" data-bw="<?php echo $image_bw ?>" data-thumb="<?php echo $image_thumb; ?>" data-thumb_bw="<?php echo $image_thumb_bw; ?>" />
 								<?php if (strlen( $video_type && $video_id )): ?>
 									<div class="video_wrapper">
