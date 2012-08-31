@@ -26,25 +26,25 @@ class TmSimplicitateBranding extends PageLinesSection {
 			<?php pagelines_main_logo();  ?>
 			<div class="icons simplicitate">
 				<?php if (ploption('twitterlink')): ?>
-					<div rel="tooltip" title="Twitter" class="iconfont"><a href="<?php echo ploption('twitterlink') ?>">l</a></div>
+					<div title="Twitter" class="iconfont"><a href="<?php echo ploption('twitterlink') ?>">l</a></div>
 				<?php endif ?>
 				<?php if (ploption('facebooklink')): ?>
-					<div rel="tooltip" title="Facebook" class="iconfont"><a href="<?php echo ploption('facebooklink') ?>">f</a></div>
+					<div title="Facebook" class="iconfont"><a href="<?php echo ploption('facebooklink') ?>">f</a></div>
 				<?php endif ?>
 				<?php if (ploption('linkedinlink')): ?>
-					<div rel="tooltip" title="Linkedin" class="iconfont"><a href="<?php echo ploption('linkedinlink') ?>">i</a></div>
+					<div title="Linkedin" class="iconfont"><a href="<?php echo ploption('linkedinlink') ?>">i</a></div>
 				<?php endif ?>
 				<?php if (ploption('youtubelink')): ?>
-					<div rel="tooltip" title="YouTube" class="iconfont"><a href="<?php echo ploption('youtubelink') ?>">x</a></div>
+					<div title="YouTube" class="iconfont"><a href="<?php echo ploption('youtubelink') ?>">x</a></div>
 				<?php endif ?>
 				<?php if (ploption('gpluslink')): ?>
-					<div rel="tooltip" title="Google Plus" class="iconfont"><a href="<?php echo ploption('gpluslink') ?>">g</a></div>
+					<div title="Google Plus" class="iconfont"><a href="<?php echo ploption('gpluslink') ?>">g</a></div>
 				<?php endif ?>
 				<?php if (ploption('pinterestlink')): ?>
-					<div rel="tooltip" title="Pinterest" class="iconfont"><a href="<?php echo ploption('pinterestlink') ?>">&amp;</a></div>
+					<div title="Pinterest" class="iconfont"><a href="<?php echo ploption('pinterestlink') ?>">&amp;</a></div>
 				<?php endif ?>
 				<?php if (ploption('rsslink')): ?>
-					<div rel="tooltip" title="RSS" class="iconfont"><a href="<?php echo apply_filters( 'pagelines_branding_rssurl', get_bloginfo('rss2_url') ) ?>">r</a></div>
+					<div title="RSS" class="iconfont"><a href="<?php echo apply_filters( 'pagelines_branding_rssurl', get_bloginfo('rss2_url') ) ?>">r</a></div>
 				<?php endif ?>
 			</div>
 		</div>

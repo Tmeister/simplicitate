@@ -255,7 +255,7 @@ class TmKenBurnSlider extends PageLinesSection {
 												$tm_cp_animation = ( $tm_cp_animation == 'fade' ) ? 'kfade' : $tm_cp_animation;
 
 										?>
-											<div id="caption-id-<?php echo $post->ID ?> " class="kcaption <?php echo $tm_cp_style ?> <?php echo $tm_cp_animation ?>" style="top:<?php echo $tm_cp_y ?>px;left:<?php echo $tm_cp_x ?>px;">
+											<div id="caption-id-<?php echo $post->ID ?>" class="kcaption <?php echo $tm_cp_style ?> <?php echo $tm_cp_animation ?>" style="top:<?php echo $tm_cp_y ?>px;left:<?php echo $tm_cp_x ?>px;">
 												<?php echo $post->post_content ?>
 											</div>
 											<!-- END INTERNAL FOREACH -->
