@@ -165,7 +165,7 @@ class Simplicitate
 		pl_default_setting( 
 		 	array( 
 			    'key' => 'pagelines_custom_logo', 
-			    'value' => 'http://pagelines.tmeister.net/simplicitate/files/2012/08/logo.png'
+			    'value' => 'wp-content/themes/simplicitate/images/logo.png'
 		    ) 
 		);
 		
