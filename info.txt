@@ -4,5 +4,13 @@ Simplicitate is a clean and minimalist theme for PageLines adds more than 10 col
 
 == Changelog ==
 
+= 1.0.1 =
+* PageLines 2.3 Icons CSS issue Fixed.
+
 = 1.0 =
 * Initial Release
+
+== Changelog ==
+
+ 
+
