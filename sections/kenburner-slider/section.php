@@ -4,7 +4,7 @@ Section: Kenburner Slider for Simplicitate
 Author: Enrique Chavez
 Author URI: http://tmeister.net
 Version: 1.2.3
-External: http://pagelines.tmeister.net/kenburner-slider/
+External: http://tmeister.net/themes-and-sections/kenburner-slider/
 Demo: http://pagelines.tmeister.net/kenburner-slider/
 Description: The Kenburner Slider gives you the chance to display rich content in a simple, elegant and colorful way, thanks to Kenburn effect and text animations. The slider also supports YouTube and Vimeo video embedding. With Kenburner Slider you can forget the usual slider and replace it with a powerful presentation tool.
 Class Name: TmKenBurnSlider
