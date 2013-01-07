@@ -129,27 +129,27 @@ blockquote p{
 		left:0px;
 	}
 	.simple .thumbnav .leftarrow, .simple .thumbnav .rightarrow {
-		background: none;
-		width: 42px;
-		height: 42px;
-		.transition(opacity .2s linear);
-		opacity: .5;
+		background: none !important;
+		width: 42px !important;
+		height: 42px !important ;
+		.transition(opacity .2s linear) !important;
+		opacity: .5 !important;
 	}
 
 	.simple .thumbnav .leftarrow:hover, 
 	.simple .thumbnav .rightarrow:hover{
-		.transition(opacity .2s linear);
-		opacity: 1;
+		.transition(opacity .2s linear) !important;
+		opacity: 1 !important;
 	}
 
 	.simple .thumbnav .leftarrow{
 		background-position: 0 0;
-		background: url( @{plChildRoot}/images/nav/left-arrow.png ) no-repeat;
+		background: url( @{plChildRoot}/images/nav/left-arrow.png ) no-repeat !important;
 	}
 
 	.simple .thumbnav .rightarrow{
 		background-position: 0 0;
-		background: url( @{plChildRoot}/images/nav/right-arrow.png ) no-repeat;
+		background: url( @{plChildRoot}/images/nav/right-arrow.png ) no-repeat !important;
 	}
 
 	.simple .slide_mainmask {
@@ -337,10 +337,10 @@ blockquote p{
 		    padding-top: 0px;
 		}
 		.nav {
-			.border-radius(25px);
+			.border-radius(30px);
 			margin: 0 2px 0 0;
-			height: 26px;
-			width: 26px;
+			height: 24px;
+			width: 24px;
 
 
 			&:hover{
@@ -352,15 +352,13 @@ blockquote p{
 		#next_pag{
 			background: url(@{plChildRoot}/images/nav/latest-next.png) no-repeat 11px 7px lighten( @pl-link, 10% );
 			&:hover{
-				background-position: 11px 7px;
 				background-color:@pl-link;
 			}
 		}
 		
 		#prev_pag{
-			background: url(@{plChildRoot}/images/nav/latest-prev.png) no-repeat 9px 7px lighten( @pl-link, 10% );
+			background: url(@{plChildRoot}/images/nav/latest-prev.png) no-repeat 8px 7px lighten( @pl-link, 10% );
 			&:hover{
-				background-position: 9px 7px;
 				background-color:@pl-link;
 
 			}

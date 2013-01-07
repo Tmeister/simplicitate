@@ -70,7 +70,7 @@
 }
 
 .latest-slider .latest_pagination {
-    width: 40px;
+    width: 60px;
     margin: 0 auto;
 }
 
@@ -79,21 +79,19 @@
     display: inline-block;
     float: left;
     cursor: pointer;
-    height: 18px;
     margin: 0 5px 0 0;
-    width: 11px;
 }
 
 .latest-slider #next_pag {
-    background-position: -15px 0;
+    
 }
 
 .latest-slider #next_pag:hover {
-    background-position: -15px -23px;
+    
 }
 
 .latest-slider #prev_pag:hover {
-    background-position: 0 -23px;
+    
 }
 
 .latest-slider .blog-thumb img{
