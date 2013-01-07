@@ -133,8 +133,8 @@ class TmKenBurnSlider extends PageLinesSection {
 			<?php endif; ?>
 		</style>
 		<script>
-			jQuery(function($){
-				$('.burner-holder').kslider({
+			jQuery(function(){
+				jQuery('.burner-holder').kslider({
 					width:<?php echo $tm_kb_width ?>,
 					height:<?php echo $tm_kb_height ?>,
 					touchenabled:'<?php echo $tm_kb_touch ?>',

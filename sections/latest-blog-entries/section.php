@@ -3,7 +3,7 @@
 Section: Latest Blog Entries for Simplicitate
 Author: Enrique Chávez	
 Author URI: http://tmeister.net
-Version: 1.0.3
+Version: 1.0.5
 Description: Latest Blogs Entries is a very powerful section for Pagelines which displays your recent posts with thumbnail, excerpt, title, date and read more link . It’s the perfect solution to show specific entries on the home page or in any other page. With more that 15 options in general.
 Class Name: TmLatestBlog
 Cloning: true
@@ -44,10 +44,10 @@ class TmLatestBlog extends PageLinesSection {
 	function section_scripts(){
 		return array(
 			'carouFredSel' => array(
-				'file'       => $this->base_url . '/jquery.carouFredSel-5.5.0-packed.js',
+				'file'       => $this->base_url . '/jquery.carouFredSel-6.1.0-packed.js',
 				'dependancy' => array('jquery'),
 				'location'   => 'footer',
-				'version'    => '5.5.0'
+				'version'    => '6.1.0'
 			),
 		);
 	}
@@ -94,40 +94,42 @@ class TmLatestBlog extends PageLinesSection {
 			}
 		</style>
 		<script>
-			jQuery(document).ready(function($) {
+			jQuery(document).ready(function() {
+				function renderLatest(){
+					jQuery(".latest<?php echo $clone_id?> .slides").each( function(a, b){
+						var highest = 0;
+						$this = jQuery(this);
 
-				$(".latest<?php echo $clone_id?> .slides").each( function(a, b){
-					var highest = 0;
-					$this = $(this);
+						$this.find('li').each(function(a, item){
+							highest = ( jQuery(item).height() > highest ) ? jQuery(item).height() : highest;
+						});
 
-					$this.find('li').each(function(a, item){
-						highest = ( $(item).height() > highest ) ? $(item).height() : highest;
+
+						$this.find('li').each(function(a, item){
+							$item = jQuery(item);
+							$item.css({'height':highest});
+							$item.find('.read-more').each( function(a, item){
+								$item = jQuery(item);
+								$item.css({'position': 'absolute', 'bottom': '5px'})
+							} );
+						});
+
+					});			
+
+					jQuery(".latest<?php echo $clone_id?> .slides").carouFredSel({
+						align       : "center",
+						width:'100%',
+						<?php echo ( $disable_autostart ) ? 'auto:false,' : 'auto: {timeoutDuration :'.$pause_duration.'},'?>
+						scroll: {
+							duration:<?php echo $effect_duration?>,
+							fx: '<?php echo $effect?>',
+							pauseOnHover: <?php echo $pause_on_hover?>
+						},
+						prev:'.latest<?php echo $clone_id?> #prev_pag',
+						next:'.latest<?php echo $clone_id?> #next_pag'
 					});
-
-
-					$this.find('li').each(function(a, item){
-						$item = $(item);
-						$item.css({'height':highest});
-						$item.find('.read-more').each( function(a, item){
-							$item = $(item);
-							$item.css({'position': 'absolute', 'bottom': '5px'})
-						} );
-					});
-
-				});			
-
-				$(".latest<?php echo $clone_id?> .slides").carouFredSel({
-					align       : "center",
-					width:'100%',
-					<?php echo ( $disable_autostart ) ? 'auto:false,' : 'auto: {pauseDuration:'.$pause_duration.'},'?>
-					scroll: {
-						duration:<?php echo $effect_duration?>,
-						fx: '<?php echo $effect?>',
-						pauseOnHover: <?php echo $pause_on_hover?>
-					},
-					prev:'.latest<?php echo $clone_id?> #prev_pag',
-					next:'.latest<?php echo $clone_id?> #next_pag'
-				});
+				}
+				setTimeout(renderLatest,1000)
 			});
 		</script>
 	<?php
