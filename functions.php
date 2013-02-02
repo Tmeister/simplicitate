@@ -18,10 +18,19 @@ class Simplicitate
 	
 		add_filter('pless_vars', array($this, 'add_less_variables'));
 
+		add_action('pagelines_after_footer', array( $this, 'add_update_tag' ) );
+
 		add_filter('pagelines_options_color_control', array($this, 'color_filter'));
 		add_filter('pagelines_options_header_footer', array($this, 'header_filter'));
 		$this->set_default_values();
 
+	}
+
+	function add_update_tag(){
+		global $post;
+	?>
+		<span class="hide updated"><?php the_date() ?></span>
+	<?php
 	}
 
 	function loop_before($excerpt){
