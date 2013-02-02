@@ -115,7 +115,7 @@ class TmKenBurnSlider extends PageLinesSection {
 		$tm_kb_items      = ( ploption('tm_kb_items', $oset) ) ? ploption('tm_kb_items', $oset) : '10';
 		$tm_kb_set        = ( ploption('tm_kb_set', $oset) ) ? ploption('tm_kb_set', $oset) : '';
 		$this->slides     = $this->get_posts($this->custom_post_type, $this->tax_id, $tm_kb_set, $tm_kb_items);
-		echo load_custom_font( ploption('tm_kb_fonts', $oset), '.text_overlay .caption' );
+		echo load_custom_font( ploption('tm_kb_fonts', $oset), '.text_overlay .kcaption' );
 
 	?>
 		<!--[if lt IE 9]><style>.kb_container img{max-width:none !important;}.simple  .kslider-bg {
@@ -123,7 +123,7 @@ class TmKenBurnSlider extends PageLinesSection {
 		<!-- Dynamic styles for Kenburn -->
 		<style>
 			#<?php echo $this->id ?> .content{width:100% !important;}
-			.text_overlay .caption{min-height:<?php echo (int) $tm_kb_font_size -5  ?>px; font-size:<?php echo $tm_kb_font_size ?>px;}
+			.text_overlay .kcaption{min-height:<?php echo (int) $tm_kb_font_size -5  ?>px; font-size:<?php echo $tm_kb_font_size ?>px;}
 			.kslider_video{background:<?php echo $tm_sf_v_bg ?>;}
 			.kslider_video h2{color:<?php echo $tm_kb_v_title ?>;}
 			.kslider_video p{color:<?php echo $tm_kb_v_text ?>;}
