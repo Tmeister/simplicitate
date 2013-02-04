@@ -18,7 +18,7 @@ class Simplicitate
 	
 		add_filter('pless_vars', array($this, 'add_less_variables'));
 
-		add_action('pagelines_after_footer', array( $this, 'add_update_tag' ) );
+		add_action('pagelines_loop_after_post_content', array( $this, 'add_update_tag' ) );
 
 		add_filter('pagelines_options_color_control', array($this, 'color_filter'));
 		add_filter('pagelines_options_header_footer', array($this, 'header_filter'));
@@ -28,14 +28,15 @@ class Simplicitate
 
 	function add_update_tag(){
 		global $post;
+		$time = get_the_date( 'c' );
 	?>
-		<span class="hide updated"><?php the_date() ?></span>
+		<time class="entry-date updated hidden" datetime="<?php echo esc_attr( $time )?>" pubdate=""><?php echo $time  ?></time>
 	<?php
 	}
 
 	function loop_before($excerpt){
 		global $post;
-		return '<div class="row"><div class="span2 the-date"><span class="the-day">'.get_the_date('d').'</span><span class="the-month">'.get_the_date('M').'</span></div><div class="span10">'.$excerpt.'</div></div>';
+		return '<time class="entry-date updated hidden" datetime="'.esc_attr( get_the_date( 'c' ) ).'" pubdate>'.esc_attr( get_the_date() ).'</time><div class="row"><div class="span2 the-date"><span class="the-day">'.get_the_date('d').'</span><span class="the-month">'.get_the_date('M').'</span></div><div class="span10">'.$excerpt.'</div></div>';
 	}
 
 
